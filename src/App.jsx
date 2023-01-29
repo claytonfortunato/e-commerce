@@ -1,11 +1,11 @@
-import Card from "./components/Card";
+import Product from "./components/Product";
 import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Card />
+      <Product />
     </div>
   );
 }

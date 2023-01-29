@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProjectCard from "./ProjectCard";
+import ProductItem from "./Product-item";
 
 const Card = () => {
   const [data, setData] = useState([]);
@@ -15,7 +15,7 @@ const Card = () => {
       {data.map((item) => {
         const { id, name, price, oldPrice, image } = item;
         return (
-          <ProjectCard
+          <ProductItem
             key={name}
             id={id}
             image={image}

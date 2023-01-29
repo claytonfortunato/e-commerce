@@ -15,6 +15,12 @@
     li {
       color: #fff;
       list-style: none;
+
+      svg {
+        margin-top: 14px;
+        font-size: 1.6rem;
+        cursor: pointer;
+      }
     }
   }
 }

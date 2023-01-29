@@ -3,7 +3,7 @@ import React from "react";
 import { MdLocalGroceryStore } from "react-icons/md";
 import "./ProjectCard.scss";
 
-const ProjectCard = ({ id, name, price, oldPrice, image }) => {
+const ProductItem = ({ id, name, price, oldPrice, image }) => {
   return (
     <div className="project">
       <div className="project_item" key={id}>
@@ -24,4 +24,4 @@ const ProjectCard = ({ id, name, price, oldPrice, image }) => {
   );
 };
 
-export default ProjectCard;
+export default ProductItem;

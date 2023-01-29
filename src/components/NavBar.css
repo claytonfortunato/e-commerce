@@ -14,4 +14,9 @@
 .nav-itens li {
   color: #fff;
   list-style: none;
+}
+.nav-itens li svg {
+  margin-top: 14px;
+  font-size: 1.6rem;
+  cursor: pointer;
 }/*# sourceMappingURL=NavBar.css.map */
