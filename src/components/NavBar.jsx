@@ -7,10 +7,12 @@ const NavBar = () => {
     <div className="nav">
       <nav className="nav-item">
         <ul className="nav-itens">
-          <li>Sneakers Shopping</li>
+          <li className="logo">Sneakers Shopping</li>
           <li>Carrinho</li>
         </ul>
       </nav>
     </div>
   );
 };
+
+export default NavBar;
