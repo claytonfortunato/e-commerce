@@ -5,7 +5,7 @@
 
   &-itens {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     .logo {
@@ -17,8 +17,6 @@
       list-style: none;
 
       svg {
-        margin-top: 14px;
-        font-size: 1.6rem;
         cursor: pointer;
       }
     }

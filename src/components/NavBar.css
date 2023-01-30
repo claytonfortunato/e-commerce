@@ -5,7 +5,7 @@
 }
 .nav-itens {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .nav-itens .logo {
@@ -16,7 +16,5 @@
   list-style: none;
 }
 .nav-itens li svg {
-  margin-top: 14px;
-  font-size: 1.6rem;
   cursor: pointer;
 }/*# sourceMappingURL=NavBar.css.map */

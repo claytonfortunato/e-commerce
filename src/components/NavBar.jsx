@@ -15,6 +15,7 @@ const NavBar = () => {
           <li className="logo">Sneakers Shopping</li>
           <li>
             <MdLocalGroceryStore
+              size={25}
               onClick={() => setCartIsVisible(!cartIsVisible)}
             />
           </li>
