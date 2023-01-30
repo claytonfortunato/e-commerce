@@ -6,9 +6,9 @@ const Cart = ({ isVisible, setIsVisible }) => {
   const handleEscapeAreaClick = () => setIsVisible(false);
 
   return (
-    <div className="cart-item" isVisible={isVisible}>
-      <div onClick={handleEscapeAreaClick}></div>
-      <h1>Cart carrinho</h1>
+    <div className="cart" isVisible={isVisible}>
+      <h2 className="cart-title">Seu Carrinho</h2>
+      <div className="cart-item"></div>
     </div>
   );
 };

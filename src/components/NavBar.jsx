@@ -8,21 +8,22 @@ import "./NavBar.scss";
 const NavBar = () => {
   const [cartIsVisible, setCartIsVisible] = useState(false);
 
-  const handleCartClick = () => {
-    setCartIsVisible(true);
-  };
-
   return (
     <div className="nav">
       <nav className="nav-item">
         <ul className="nav-itens">
           <li className="logo">Sneakers Shopping</li>
           <li>
-            <MdLocalGroceryStore onClick={handleCartClick} />
+            <MdLocalGroceryStore
+              onClick={() => setCartIsVisible(!cartIsVisible)}
+            />
           </li>
         </ul>
       </nav>
-      <Cart isVisible={cartIsVisible} setIsVisible={setCartIsVisible} />
+      <Cart
+        className={cartIsVisible ? <Cart /> : ""}
+        onClick={() => setCartIsVisible(false)}
+      />
     </div>
   );
 };
