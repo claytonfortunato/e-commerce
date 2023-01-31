@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Badge } from "@mui/material";
 
 import { MdLocalGroceryStore } from "react-icons/md";
 import "./NavBar.scss";
@@ -13,7 +14,9 @@ const NavBar = ({ click }) => {
         <ul className="nav-itens">
           <li className="logo">Sneakers Shopping</li>
           <li>
-            <MdLocalGroceryStore size={25} onClick={click} />({productsCount})
+            <Badge badgeContent={productsCount} color="primary">
+              <MdLocalGroceryStore size={25} onClick={click} />
+            </Badge>
           </li>
         </ul>
       </nav>
