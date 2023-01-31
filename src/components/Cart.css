@@ -51,6 +51,10 @@
   flex: 1;
   font-size: 1rem;
 }
+.cart-box .detail-box .detail-quantity p {
+  margin: 0rem 0.6rem;
+}
+
 .cart-box .detail-box .detail-quantity p:nth-child(1) {
   font-weight: 600;
 }
