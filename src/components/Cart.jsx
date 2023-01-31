@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-
-import "./Cart.css";
-import { MdRemoveShoppingCart } from "react-icons/md";
-import { AiOutlinePlus, AiOutlineMinus, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 import CartItem from "./CartItem";
 import { useSelector } from "react-redux";
-import rootReducer from "../redux/root-reducer";
+
+import "./Cart.css";
+import { selectProductsTotalPrice } from "../redux/cart/cart.selectors";
 
 const Cart = ({ open, click }) => {
   const { products } = useSelector((rootReducer) => rootReducer.cartReducer);
+
+  const productsTotalPrice = useSelector(selectProductsTotalPrice);
 
   return (
     <div className={open ? "cart active" : "cart"}>
@@ -20,7 +20,7 @@ const Cart = ({ open, click }) => {
       {/* Total */}
       <div className="total">
         <div className="total-title">Total $</div>
-        <div className="total-price"></div>
+        <div className="total-price"> {productsTotalPrice} </div>
       </div>
       {/* Buy Button */}
       <button type="button" className="btn-buy">
