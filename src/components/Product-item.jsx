@@ -1,20 +1,28 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { addProductToCart } from "../redux/cart/actions";
 
 import { MdLocalGroceryStore } from "react-icons/md";
 import "./ProjectCard.scss";
 
-const ProductItem = ({ id, name, price, oldPrice, image }) => {
+const ProductItem = ({ product }) => {
+  const dispatch = useDispatch();
+
+  const handleProductClick = () => {
+    dispatch(addProductToCart(product));
+  };
+
   return (
     <div className="project">
-      <div className="project_item" key={id}>
+      <div className="project_item" key={product.id}>
         <div className="project_image">
-          <img src={image} alt={name} />
+          <img src={product.image} alt={product.name} />
         </div>
         <div className="project_info">
-          <span className="name">{name}</span>
-          <span className="oldPrice">${oldPrice}</span>
-          <span className="price">${price}</span>
-          <button className="btn">
+          <span className="name">{product.name}</span>
+          <span className="oldPrice">${product.oldPrice}</span>
+          <span className="price">${product.price}</span>
+          <button className="btn" onClick={handleProductClick}>
             <MdLocalGroceryStore />
             Adicionar
           </button>

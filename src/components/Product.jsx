@@ -12,18 +12,8 @@ const Card = () => {
 
   return (
     <div className="container">
-      {data.map((item) => {
-        const { id, name, price, oldPrice, image } = item;
-        return (
-          <ProductItem
-            key={name}
-            id={id}
-            image={image}
-            name={name}
-            price={price}
-            oldPrice={oldPrice}
-          />
-        );
+      {data.map((product) => {
+        return <ProductItem product={product} key={product.id} />;
       })}
     </div>
   );

@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createStore } from "redux";
 
 import rootReducer from "./root-reducer";
 
