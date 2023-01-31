@@ -1,12 +1,17 @@
 .cart {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 360px;
   min-height: 100vh;
   padding: 20px;
   background: #fff;
   box-shadow: -2px 0 4px hsla(0deg, 4%, 15%, 0.1);
+  transition: 0.3s;
+  transform: translateX(-100%);
+}
+.cart .active {
+  transform: translateX(0%);
 }
 .cart-title {
   text-align: center;

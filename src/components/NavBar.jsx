@@ -1,30 +1,19 @@
-import React, { useState } from "react";
-
-import Cart from "./Cart";
+import React from "react";
 
 import { MdLocalGroceryStore } from "react-icons/md";
 import "./NavBar.scss";
 
-const NavBar = () => {
-  const [cartIsVisible, setCartIsVisible] = useState(false);
-
+const NavBar = ({ click }) => {
   return (
     <div className="nav">
       <nav className="nav-item">
         <ul className="nav-itens">
           <li className="logo">Sneakers Shopping</li>
           <li>
-            <MdLocalGroceryStore
-              size={25}
-              onClick={() => setCartIsVisible(!cartIsVisible)}
-            />
+            <MdLocalGroceryStore size={25} onClick={click} />
           </li>
         </ul>
       </nav>
-      <Cart
-        className={cartIsVisible ? <Cart /> : ""}
-        onClick={() => setCartIsVisible(false)}
-      />
     </div>
   );
 };

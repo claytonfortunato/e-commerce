@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Cart.scss";
 import { MdRemoveShoppingCart } from "react-icons/md";
 import { AiOutlinePlus, AiOutlineMinus, AiOutlineClose } from "react-icons/ai";
 
-const Cart = ({ isVisible, setIsVisible }) => {
+const Cart = ({ open }) => {
   return (
-    <div className="cart" isVisible={isVisible}>
+    <div className={open ? "cart active" : "cart"}>
       <h2 className="cart-title">Seu Carrinho</h2>
       <div className="cart-item">
         <div className="cart-box">
