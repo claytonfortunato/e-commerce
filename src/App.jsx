@@ -12,8 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      <Cart open={open} />
       <NavBar click={handleClick} />
+      <Cart open={open} click={handleClick} />
       <Product />
     </div>
   );

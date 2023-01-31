@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import "./Cart.scss";
+import "./Cart.css";
 import { MdRemoveShoppingCart } from "react-icons/md";
 import { AiOutlinePlus, AiOutlineMinus, AiOutlineClose } from "react-icons/ai";
 
-const Cart = ({ open }) => {
+const Cart = ({ open, click }) => {
   return (
     <div className={open ? "cart active" : "cart"}>
       <h2 className="cart-title">Seu Carrinho</h2>
@@ -38,7 +38,7 @@ const Cart = ({ open }) => {
           Comprar Agora
         </button>
         {/* Cart Close */}
-        <AiOutlineClose className="close-cart" size={20} />
+        <AiOutlineClose className="close-cart" size={20} onClick={click} />
       </div>
     </div>
   );

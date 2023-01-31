@@ -1,18 +1,20 @@
 .cart {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 360px;
-  min-height: 100vh;
+  height: 100vh;
   padding: 20px;
   background: #fff;
   box-shadow: -2px 0 4px hsla(0deg, 4%, 15%, 0.1);
-  transition: 0.3s;
-  transform: translateX(-100%);
+  transition: 350ms;
+  transform: translateX(100%);
 }
-.cart .active {
+
+.cart.active {
   transform: translateX(0%);
 }
+
 .cart-title {
   text-align: center;
   font-size: 1.5rem;
@@ -23,7 +25,7 @@
   width: 100px;
   height: 100px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   padding: 10px;
 }
 .cart-box {
@@ -89,4 +91,4 @@
   top: 1rem;
   right: 0.8rem;
   cursor: pointer;
-}/*# sourceMappingURL=Cart.css.map */
+} /*# sourceMappingURL=Cart.css.map */
