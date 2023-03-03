@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/104373308/216209688-b26e39f1-5b9d-416d
 
 # 🕹 Demo
 
-*  <a href="https://iridescent-maamoul-4f2fd4.netlify.app/" target="_blank">E commerce</a>
+*  <a href="https://grand-phoenix-98fa6f.netlify.app/" target="_blank">E commerce</a>
 
 # :computer: Projeto
 Projeto simula um ecommerce simples, onde foi construído fazendo uma requisição de um json onde a mesma retorna todas as imagens que temos a exposição , essa aplicação nos permite adicioná-lo, removê-lo do carrinho e mostrando o valor total.
