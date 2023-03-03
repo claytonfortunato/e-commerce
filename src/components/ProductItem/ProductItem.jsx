@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addProductToCart } from "../redux/cart/actions";
+import { addProductToCart } from "../../redux/cart/actions";
 
 import { MdLocalGroceryStore } from "react-icons/md";
 import "./ProjectCard.scss";

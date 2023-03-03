@@ -3,7 +3,7 @@ import { Badge } from "@mui/material";
 
 import { MdLocalGroceryStore } from "react-icons/md";
 import "./NavBar.scss";
-import { selectProductsCount } from "../redux/cart/cart.selectors";
+import { selectProductsCount } from "../../redux/cart/cart.selectors";
 
 const NavBar = ({ click }) => {
   const productsCount = useSelector(selectProductsCount);

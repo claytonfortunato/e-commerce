@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import Product from "./components/Product";
-import NavBar from "./components/NavBar";
-import Cart from "./components/Cart";
+import NavBar from "./components/NavBar/Index";
+import Cart from "./components/Cart/Index";
 
 function App() {
   const [open, setOpen] = useState(false);

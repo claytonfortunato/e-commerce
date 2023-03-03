@@ -1,19 +1,11 @@
-import React, { useEffect, useState } from "react";
+import products from "../data/shoes";
 
-import ProductItem from "./ProductItem";
+import ProductItem from "./ProductItem/ProductItem";
 
 const Card = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:5173/src/static/shoes.json")
-      .then((r) => r.json())
-      .then(setData);
-  }, []);
-
   return (
     <div className="container">
-      {data.map((product) => {
+      {products.map((product) => {
         return <ProductItem product={product} key={product.id} />;
       })}
     </div>

@@ -1,9 +1,9 @@
 import { AiOutlineClose } from "react-icons/ai";
-import CartItem from "./CartItem";
+import CartItem from "../CartItem/Index";
 import { useSelector } from "react-redux";
 
 import "./Cart.css";
-import { selectProductsTotalPrice } from "../redux/cart/cart.selectors";
+import { selectProductsTotalPrice } from "../../redux/cart/cart.selectors";
 
 const Cart = ({ open, click }) => {
   const { products } = useSelector((rootReducer) => rootReducer.cartReducer);
